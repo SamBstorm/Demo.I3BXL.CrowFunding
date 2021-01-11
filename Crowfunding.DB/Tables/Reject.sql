@@ -6,6 +6,7 @@
 	[Date] DATETIME2 NOT NULL,
 	[Comment] VARCHAR(1024) NOT NULL,
 	CONSTRAINT PK_Reject PRIMARY KEY ([IDReject]),
-	CONSTRAINT FK_Reject_User FOREIGN KEY ([IDReject]) REFERENCES [Admin] ,
-	CONSTRAINT FK_Reject_Project FOREIGN KEY ([IDReject]) REFERENCES [Project],
+	CONSTRAINT CK_Reject_Comment CHECK (LEN(REPLACE([Comment],' ','')) > 0),
+	CONSTRAINT FK_Reject_User FOREIGN KEY ([IDUser]) REFERENCES [Admin] ,
+	CONSTRAINT FK_Reject_Project FOREIGN KEY ([IDProject]) REFERENCES [Project],
 )
