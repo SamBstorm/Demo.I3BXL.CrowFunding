@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Project]
 (
-	[IDProject] INT NOT NULL,
+	[IDProject] INT NOT NULL IDENTITY,
 	[Name] VARCHAR(64) NOT NULL,
 	[Description] VARCHAR(MAX) NOT NULL,
 	[URLVideo] VARCHAR(512),
