@@ -79,5 +79,9 @@
     <Build Include="Vues\V_FullBasicUser.sql" />
     <Build Include="Vues\V_FullProjectCreator.sql" />
     <Build Include="Vues\V_GetRandom.sql" />
+    <Build Include="ProcéduresStockées\SP_Project_Insert.sql" />
+    <Build Include="ProcéduresStockées\SP_User_AddSociety.sql" />
+    <Build Include="ProcéduresStockées\SP_Project_Validate.sql" />
+    <Build Include="ProcéduresStockées\SP_StepReward_Insert.sql" />
   </ItemGroup>
 </Project>
