@@ -56,5 +56,28 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="FonctionsScalaires" />
+    <Folder Include="ProcéduresStockées" />
+    <Folder Include="Scripts" />
+    <Folder Include="Tables" />
+    <Folder Include="Vues" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="FonctionsScalaires\SF_EncryptedPassword.sql" />
+    <Build Include="FonctionsScalaires\SF_GenerateSalt.sql" />
+    <Build Include="ProcéduresStockées\SP_User_Insert.sql" />
+    <Build Include="Scripts\PostScript.sql" />
+    <Build Include="Tables\Address.sql" />
+    <Build Include="Tables\Admin.sql" />
+    <Build Include="Tables\Project.sql" />
+    <Build Include="Tables\Project_Creator.sql" />
+    <Build Include="Tables\Reject.sql" />
+    <Build Include="Tables\Sponsor.sql" />
+    <Build Include="Tables\StepReward.sql" />
+    <Build Include="Tables\User.sql" />
+    <Build Include="Vues\V_FullAdmin.sql" />
+    <Build Include="Vues\V_FullBasicUser.sql" />
+    <Build Include="Vues\V_FullProjectCreator.sql" />
+    <Build Include="Vues\V_GetRandom.sql" />
   </ItemGroup>
 </Project>
