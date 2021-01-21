@@ -58,15 +58,14 @@
     <Folder Include="Properties" />
     <Folder Include="FonctionsScalaires" />
     <Folder Include="ProcéduresStockées" />
-    <Folder Include="Scripts" />
     <Folder Include="Tables" />
     <Folder Include="Vues" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="FonctionsScalaires\SF_EncryptedPassword.sql" />
     <Build Include="FonctionsScalaires\SF_GenerateSalt.sql" />
     <Build Include="ProcéduresStockées\SP_User_Insert.sql" />
-    <Build Include="Scripts\PostScript.sql" />
     <Build Include="Tables\Address.sql" />
     <Build Include="Tables\Admin.sql" />
     <Build Include="Tables\Project.sql" />
@@ -83,5 +82,8 @@
     <Build Include="ProcéduresStockées\SP_User_AddSociety.sql" />
     <Build Include="ProcéduresStockées\SP_Project_Validate.sql" />
     <Build Include="ProcéduresStockées\SP_StepReward_Insert.sql" />
+    <Build Include="Scripts\Script.PostDeploymentGeneral.sql" />
+    <Build Include="Scripts\PostScript.sql" />
+    <Build Include="Scripts\Script.PostDeployment.UserInsert.sql" />
   </ItemGroup>
 </Project>

@@ -4,6 +4,6 @@
 	@amount MONEY,
 	@reward VARCHAR(512)
 AS
-	INSERT INTO [StepReward](IDProject,[Name],[Amount],[Reward],[CreationDate])
-		OUTPUT inserted.IdStepReward
-		VALUES (@projectId,@name,@amount,@reward,GETDATE())
+	INSERT INTO [StepReward](IDProject,[Name],[Amount],[Reward])
+		OUTPUT inserted.IDStepReward
+		VALUES (@projectId,@name,@amount,@reward)
