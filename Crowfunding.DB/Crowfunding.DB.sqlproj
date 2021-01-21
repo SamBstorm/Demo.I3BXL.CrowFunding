@@ -83,7 +83,9 @@
     <Build Include="ProcéduresStockées\SP_Project_Validate.sql" />
     <Build Include="ProcéduresStockées\SP_StepReward_Insert.sql" />
     <Build Include="Scripts\Script.PostDeploymentGeneral.sql" />
-    <Build Include="Scripts\PostScript.sql" />
     <Build Include="Scripts\Script.PostDeployment.UserInsert.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Script.PostDeployment.ProjectInsert.sql" />
   </ItemGroup>
 </Project>
