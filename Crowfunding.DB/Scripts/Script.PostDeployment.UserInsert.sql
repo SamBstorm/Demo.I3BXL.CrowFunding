@@ -34,3 +34,7 @@ EXECUTE SP_User_AddSociety
 	@street = 'Boulvard Audan',
 	@city = 'Charleroi',
 	@country = 'BELGIUM'
+
+DECLARE @uId2 INTEGER = (SELECT IDUser FROM [User] WHERE Email LIKE 'michael.person@bstorm.be')
+INSERT INTO [Admin]
+    VALUES  (@uId2, GETDATE())
