@@ -10,5 +10,5 @@
 	CONSTRAINT CK_StepReward_Amount CHECK ([Amount] >= 0),
 	CONSTRAINT UK_StepReward_Amount_Project UNIQUE ([Amount],[IDProject]),
 	CONSTRAINT UK_StepReward_Reward_Project UNIQUE ([Reward],[IDProject]),
-	CONSTRAINT FK_StepReward_Project FOREIGN KEY([IDStepReward]) REFERENCES [Project],
+	CONSTRAINT FK_StepReward_Project FOREIGN KEY([IDProject]) REFERENCES [Project],
 )

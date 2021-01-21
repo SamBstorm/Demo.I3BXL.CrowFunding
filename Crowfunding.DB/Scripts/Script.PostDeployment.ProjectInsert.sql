@@ -1,5 +1,5 @@
 ﻿DECLARE @cId INTEGER = (SELECT ID FROM [V_FullProjectCreator] WHERE Email LIKE 'samuel.legrain@bstorm.be')
-DECLARE @aId INTEGER = (SELECT ID FROM [V_FullAdmin] WHERE Email LIKE 'michael.person@bstorm.be')
+DECLARE @aId INTEGER = (SELECT ID FROM [V_FullAdmin] WHERE Email LIKE 'michael.person@cognitic.be')
 
 EXECUTE SP_Project_Insert
 	@name = 'MaSuperDB',
@@ -21,7 +21,7 @@ EXECUTE SP_StepReward_Insert
 EXECUTE SP_StepReward_Insert
 	@projectId = @pId,
 	@name = 'Petite bourse',
-	@amount = 0,
+	@amount = 10,
 	@reward = 'Bourse en tissu'
 
 EXECUTE SP_StepReward_Insert

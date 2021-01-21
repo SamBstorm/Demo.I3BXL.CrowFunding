@@ -17,7 +17,7 @@ EXECUTE SP_User_Insert
 	@fn = 'Michael',
 	@ln = 'Person',
 	@ml = 'michael.person@cognitic.be',
-	@phone = '+32490123456',
+	@phone = '+32490654321',
 	@birthdate = '1983-01-01',
 	@number = '12',
 	@street = 'Avenue McArthur',
@@ -35,6 +35,6 @@ EXECUTE SP_User_AddSociety
 	@city = 'Charleroi',
 	@country = 'BELGIUM'
 
-DECLARE @uId2 INTEGER = (SELECT IDUser FROM [User] WHERE Email LIKE 'michael.person@bstorm.be')
+DECLARE @uId2 INTEGER = (SELECT IDUser FROM [User] WHERE Email LIKE 'michael.person@cognitic.be')
 INSERT INTO [Admin]
     VALUES  (@uId2, GETDATE())
